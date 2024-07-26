@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Very dark gray background */
+    color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+header {
+    background-color: #1a1a1a; /* Darker gray */
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 20px; /* Add 20px margin from top */
+    left: 25px; /* Add 20px margin from left */
+    right: 20px; /* Add 20px margin from right */
+    width: auto; /* Set width to auto */
+    z-index: 10; /* Ensure header stays on top */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #ffc107; /* Yellow-orange color */
+    border-radius: 10px;
+}
+
+main {
+    padding-top: 6rem; /* Adjust for header height */
+}
+
+.container {
+    max-width: 800px; /* Set a maximum width */
+    margin: 60px 60px 60px; /* Add 20px margin from left and right */
+    padding: 2rem;
+    background-color: #1a1a1a; /* Dark gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 2px solid #ffc107; /* Add border */
+}
+
+.page {
+    display: none; /* Hide all sections initially */
+}
+
+.page.active {
+    display: block;
+}
+
+#home .profile-picture {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#home .profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+  z-index: -1;
+}
+
+#home .profile-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#home .profile-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff; /* White text color for better contrast */
+}
+
+#home .profile-info p {
+    font-size: 1.2rem;
+    color: #ccc; /* Light gray text color for better contrast */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer {
+    background-color: #1a1a1a; /* Dark blue-gray color */
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0; /* Adjust padding */
+    position: relative;
+    top: 50px;
+    bottom: 20px; /* Add some space from the bottom */
+    left: 50%; /* Center the footer horizontally */
+    transform: translateX(-50%); /* Center the footer horizontally */
+    width: 80%; /* Set a maximum width */
+    height: 50px; /* Set fixed height */
+    border: 1px solid #ffc107; /* Add border */
+    border-radius: 5px; /* Add border radius */
+}
+}
+
+/* Responsive Design */
+@media (max-width: 230px) {
+    .container {
+        padding: 1rem;
+    }
+
+    #home .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Animation (You can add more animations for different elements if needed) */
+.container {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-info h1 {
+    animation: zoomIn 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Additional Styling for Social Media Icons (Optional) */
+.logo-text {
+    margin-bottom: 20px;
+    text-align: center; /* Center the social media icons */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.click-here {
+    font-size: 14px;
+    color: #337ab7;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.click-here:hover {
+    color: #23527c;
+}
